@@ -1,5 +1,5 @@
-# DM Intern
-An intern for the busy Dungeon Master. Dm Intern(DMI) remembers important facts about you r conversations using knowledge graphs. This means that as you talk more with your Intern about your game it will continue to learn.
+# TableTop Intern
+An intern for the busy Game Master. TableTop Intern(TTI) remembers important facts about you r conversations using knowledge graphs. This means that as you talk more with your Intern about your game it will continue to learn.
 
 # Usage
 Example usage for a CLI tool is in main.py. You can run this example using: \
