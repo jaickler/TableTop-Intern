@@ -1,10 +1,11 @@
-from ChatBot.ChatBot import DmIntern
+from ChatBot.ChatBot import TTRPGIntern
 import dotenv
 import asyncio
+import pathlib
 
 async def main():
     dotenv.load_dotenv()
-    intern = DmIntern()
+    intern = TTRPGIntern()
     cont:bool = True
     
     # Main input and response loop.
@@ -14,6 +15,8 @@ async def main():
             intern.save_graph()
             cont = False
             break
+        elif user_input.lower() == "file":
+            await intern.parse_file(input("File Path: "))
         else:
             response:str = await intern.run(user_input)
             print("\nIntern:", response, "\n")
